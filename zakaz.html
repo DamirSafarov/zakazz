@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>TanGallery</title>
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-top">
+                    <div class="company-info">
+                        <a href="tel:+375293309393" class="company-info__phone link-reset">+375 (29) 330-93-93</a>
+                        <a href="mailto:info@tangallery.by" class="company-info__mail link-reset">info@tangallery.by</a>
+                    </div>
+                    <a href="index.html" class="header-top__logo logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                    <div class="header-details">
+                        <button class="header-details__search  btn-reset">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.114 16.3951L12.83 11.9395C13.9315 10.6301 14.535 8.98262 14.535 7.26749C14.535 3.26026 11.2747 0 7.26749 0C3.26026 0 0 3.26026 0 7.26749C0 11.2747 3.26026 14.535 7.26749 14.535C8.77187 14.535 10.2055 14.0812 11.4311 13.2199L15.7477 17.7093C15.9281 17.8967 16.1708 18 16.4309 18C16.677 18 16.9105 17.9062 17.0878 17.7355C17.4644 17.3731 17.4764 16.7721 17.114 16.3951ZM7.26749 1.89587C10.2295 1.89587 12.6391 4.30552 12.6391 7.26749C12.6391 10.2295 10.2295 12.6391 7.26749 12.6391C4.30552 12.6391 1.89587 10.2295 1.89587 7.26749C1.89587 4.30552 4.30552 1.89587 7.26749 1.89587Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                        <button class="header-details__account register btn-reset">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8151 7.01714C14.6926 6.28932 15.2525 5.1912 15.2525 3.96471C15.2525 1.77859 13.4739 0 11.2878 0C9.10168 0 7.32316 1.77859 7.32316 3.96471C7.32316 4.25047 7.35381 4.52916 7.41154 4.79793C7.18577 4.75785 6.95352 4.73686 6.71643 4.73686C4.53031 4.73686 2.75179 6.51545 2.75179 8.70158C2.75179 9.92795 3.31158 11.026 4.18894 11.7538C1.73458 12.7545 0 15.1664 0 17.9762H1.40657C1.40657 15.0483 3.78855 12.6663 6.7164 12.6663C8.90252 12.6663 10.681 10.8877 10.681 8.70161C10.681 8.41586 10.6504 8.13713 10.5927 7.86836C10.8184 7.90844 11.0507 7.92943 11.2878 7.92943C13.0132 7.92943 14.5484 8.75716 15.5188 10.0359L16.4719 8.97464C15.7675 8.11969 14.856 7.44166 13.8151 7.01714ZM6.71643 11.2597C5.30593 11.2597 4.15835 10.1121 4.15835 8.70158C4.15835 7.29101 5.30593 6.14346 6.71643 6.14346C8.12694 6.14346 9.27451 7.29105 9.27451 8.70158C9.27451 10.1121 8.12694 11.2597 6.71643 11.2597ZM11.2878 6.5228C9.8773 6.5228 8.72972 5.37524 8.72972 3.96468C8.72972 2.55411 9.8773 1.40659 11.2878 1.40659C12.6983 1.40659 13.8459 2.55415 13.8459 3.96471C13.8459 5.37531 12.6983 6.5228 11.2878 6.5228Z"
+                                    fill="black" />
+                                <path
+                                    d="M16.9535 10.5434L12.0681 15.9829L9.31116 13.3584L8.34141 14.3773L12.1472 18L18 11.4833L16.9535 10.5434Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                        <a href="#" class="header-details__favourite succes link-reset">
+                            <svg width="21" height="17" viewBox="0 0 21 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.761 1.66582C16.5424 -0.554972 12.9331 -0.554972 10.715 1.66582L10.1998 2.18134L9.68493 1.66582C7.46686 -0.555273 3.85726 -0.555273 1.6392 1.66582C-0.533827 3.84152 -0.547938 7.29024 1.60648 9.68808C3.57145 11.8743 9.36669 16.5975 9.61257 16.7974C9.7795 16.9333 9.98035 16.9994 10.18 16.9994C10.1866 16.9994 10.1932 16.9994 10.1995 16.9991C10.4061 17.0088 10.6141 16.9378 10.7865 16.7974C11.0323 16.5975 16.8282 11.8743 18.7937 9.68778C20.9479 7.29024 20.9338 3.84152 18.761 1.66582ZM17.4547 8.48149C15.9227 10.1856 11.7114 13.7001 10.1995 14.9473C8.68758 13.7004 4.47723 10.1862 2.94548 8.4818C1.44255 6.80929 1.42844 4.42738 2.91275 2.94124C3.67082 2.18254 4.66637 1.80289 5.66191 1.80289C6.65746 1.80289 7.653 2.18224 8.41107 2.94124L9.54352 4.07508C9.67832 4.21005 9.84825 4.29061 10.0266 4.31886C10.316 4.38109 10.63 4.30023 10.8552 4.07538L11.9882 2.94124C13.5047 1.42354 15.9713 1.42384 17.4869 2.94124C18.9712 4.42738 18.9571 6.80929 17.4547 8.48149Z"
+                                    fill="black" />
+                            </svg>
+                            <span class="counter counter--white">0</span>
+                        </a>
+                        <a href="#" class="header-details__cart account-login link-reset">
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.5 5.83333L14.3728 5.88235L15 20H0L0.627141 5.88235H3.09267V3.13725C3.09267 1.40737 4.46806 1.21976e-07 6.15863 1.21976e-07L8.33333 3.72072e-05C8.7992 6.03023e-05 10 -4.37101e-06 10.8333 0.833333C11.6667 1.66667 11.5664 2.40518 11.5664 3.13725V5.86284L10.9492 5.88235H11.5664V5.86284L12.5 5.83333ZM1.72575 7.05883H3.09267V18.8235H1.20316L1.72575 7.05883ZM4.2424 18.8235V7.05883H5.77538H6.34814H6.92511H10.9492H12.0989H13.2742L13.7968 18.8235H4.2424ZM10 1.66667C10.1082 1.77487 9.85749 1.54719 10 1.66667C9.66803 1.3347 9.26465 1.2356 8.75 1.17647C8.89798 1.1769 8.61869 1.16139 8.75 1.17647C8.33333 1.17527 6.65931 1.17231 6.3164 1.17527C6.23441 1.17597 6.17671 1.17647 6.15863 1.17647C5.10202 1.17647 4.2424 2.05608 4.2424 3.13725V5.88235H6.92511H10.4167V3.13725C10.4167 2.73217 10.4063 2.00729 10 1.66667Z"
+                                    fill="black" />
+                            </svg>
+                            <span class="counter counter--black">1</span>
+                        </a>
+                        <select class="header-select form__select">
+                            <option class="header-select__option" value="byn">
+                                Byn
+                            </option>
+                            <option class="header-select__option" value="usd">Usd</option>
+                            <option class="header-select__option" value="eur">Eur</option>
+                            <option class="header-select__option" value="rub">Rub</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header-mobile">
+                    <button class="header-burger mobile-burger btn-reset">
+                        <img src="img/mobile-burger.png" alt="burger">
+                    </button>
+                    <div class="header-details">
+                        <button class="header-details__search btn-reset">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.114 16.3951L12.83 11.9395C13.9315 10.6301 14.535 8.98262 14.535 7.26749C14.535 3.26026 11.2747 0 7.26749 0C3.26026 0 0 3.26026 0 7.26749C0 11.2747 3.26026 14.535 7.26749 14.535C8.77187 14.535 10.2055 14.0812 11.4311 13.2199L15.7477 17.7093C15.9281 17.8967 16.1708 18 16.4309 18C16.677 18 16.9105 17.9062 17.0878 17.7355C17.4644 17.3731 17.4764 16.7721 17.114 16.3951ZM7.26749 1.89587C10.2295 1.89587 12.6391 4.30552 12.6391 7.26749C12.6391 10.2295 10.2295 12.6391 7.26749 12.6391C4.30552 12.6391 1.89587 10.2295 1.89587 7.26749C1.89587 4.30552 4.30552 1.89587 7.26749 1.89587Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="index.html" class="header-top__logo logo">
+                        <svg width="102" height="12" viewBox="0 0 102 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.230769H8.46492V2.40659H5.35838V11.7692H3.09011V2.40659H0V0.230769Z"
+                                fill="black" />
+                            <path
+                                d="M18.7586 11.7692H16.293L15.6027 9.69231H11.0169L10.3265 11.7692H7.87744L11.9044 0.230769H14.7151L18.7586 11.7692ZM13.318 2.85165L11.7401 7.56593H14.8959L13.318 2.85165Z"
+                                fill="black" />
+                            <path
+                                d="M26.5326 7.26923V0.230769H28.8009V11.7692H27.075L22.144 4.71429V11.7692H19.8757V0.230769H21.6016L26.5326 7.26923Z"
+                                fill="black" />
+                            <path
+                                d="M40.5672 5.57143H46.3365V6.46154C46.3365 8.10989 45.8105 9.44505 44.7585 10.467C43.7066 11.489 42.3478 12 40.6822 12C38.9071 12 37.4332 11.4231 36.2607 10.2692C35.0992 9.1044 34.5184 7.68681 34.5184 6.01648C34.5184 4.33516 35.0937 2.91209 36.2443 1.74725C37.4058 0.582418 38.8413 0 40.5507 0C41.6136 0 42.5889 0.241758 43.4765 0.725275C44.364 1.20879 45.0599 1.86264 45.5639 2.68681L43.6244 3.80769C43.3505 3.33517 42.9341 2.95055 42.3752 2.65385C41.8164 2.35714 41.2027 2.20879 40.5343 2.20879C39.4275 2.20879 38.5235 2.57143 37.8222 3.2967C37.1209 4 36.7703 4.90659 36.7703 6.01648C36.7703 7.1044 37.1264 8.0055 37.8387 8.71978C38.5509 9.42308 39.5043 9.77473 40.6987 9.77473C41.5643 9.77473 42.2875 9.58242 42.8683 9.1978C43.4491 8.81319 43.8436 8.27473 44.0518 7.58242H40.5672V5.57143Z"
+                                fill="black" />
+                            <path
+                                d="M57.3945 11.7692H54.929L54.2387 9.69231H49.6528L48.9625 11.7692H46.5134L50.5404 0.230769H53.3511L57.3945 11.7692ZM51.954 2.85165L50.376 7.56593H53.5319L51.954 2.85165Z"
+                                fill="black" />
+                            <path d="M60.78 0.230769V9.59341H65.1686V11.7692H58.5117V0.230769H60.78Z" fill="black" />
+                            <path d="M68.7255 0.230769V9.59341H73.1141V11.7692H66.4572V0.230769H68.7255Z"
+                                fill="black" />
+                            <path
+                                d="M76.671 7.00549V9.59341H81.5198V11.7692H74.4027V0.230769H81.4376V2.40659H76.671V4.86264H81.0267V7.00549H76.671Z"
+                                fill="black" />
+                            <path
+                                d="M91.8795 11.7692H89.4304L87.1128 7.76374H85.3869V11.7692H83.1187V0.230769H87.721C88.7839 0.230769 89.6879 0.604396 90.433 1.35165C91.1782 2.0989 91.5507 3 91.5507 4.05495C91.5507 4.76923 91.348 5.43407 90.9426 6.04945C90.5371 6.65385 90.0002 7.10989 89.3318 7.41758L91.8795 11.7692ZM87.721 2.35714H85.3869V5.76923H87.721C88.1483 5.76923 88.5154 5.6044 88.8222 5.27473C89.129 4.93407 89.2825 4.52747 89.2825 4.05495C89.2825 3.58242 89.129 3.18132 88.8222 2.85165C88.5154 2.52198 88.1483 2.35714 87.721 2.35714Z"
+                                fill="black" />
+                            <path
+                                d="M99.4359 0.230769H102L98.0552 7.26923V11.7692H95.8033V7.26923L91.875 0.230769H94.4391L96.9375 5.04396L99.4359 0.230769Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <div class="header-details">
+                        <a href="#" class="header-details__cart register link-reset">
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.5 5.83333L14.3728 5.88235L15 20H0L0.627141 5.88235H3.09267V3.13725C3.09267 1.40737 4.46806 1.21976e-07 6.15863 1.21976e-07L8.33333 3.72072e-05C8.7992 6.03023e-05 10 -4.37101e-06 10.8333 0.833333C11.6667 1.66667 11.5664 2.40518 11.5664 3.13725V5.86284L10.9492 5.88235H11.5664V5.86284L12.5 5.83333ZM1.72575 7.05883H3.09267V18.8235H1.20316L1.72575 7.05883ZM4.2424 18.8235V7.05883H5.77538H6.34814H6.92511H10.9492H12.0989H13.2742L13.7968 18.8235H4.2424ZM10 1.66667C10.1082 1.77487 9.85749 1.54719 10 1.66667C9.66803 1.3347 9.26465 1.2356 8.75 1.17647C8.89798 1.1769 8.61869 1.16139 8.75 1.17647C8.33333 1.17527 6.65931 1.17231 6.3164 1.17527C6.23441 1.17597 6.17671 1.17647 6.15863 1.17647C5.10202 1.17647 4.2424 2.05608 4.2424 3.13725V5.88235H6.92511H10.4167V3.13725C10.4167 2.73217 10.4063 2.00729 10 1.66667Z"
+                                    fill="black" />
+                            </svg>
+                            <span class="counter counter--black">1</span>
+                        </a>
+                    </div>
+                    <select class="header-select form__select">
+                        <option class="header-select__option" value="byn">
+                            Byn
+                        </option>
+                        <option class="header-select__option" value="usd">Usd</option>
+                        <option class="header-select__option" value="eur">Eur</option>
+                        <option class="header-select__option" value="rub">Rub</option>
+                    </select>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-left">
+                        <button class="header-burger btn-reset">
+                            <img src="img/burger.png" alt="burger">
+                        </button>
+                        <button class="mobile-burger mobile-burger--mod btn-reset">
+                            <img src="img/burger.png" alt="burger">
+                        </button>
+                        <a href="#" class="header-left__products link-reset link-effect">
+                            <span>Все товары</span>
+                            <span>Все товары</span>
+                        </a>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="navigation-list list-reset">
+                            <li class="navigation-list__item">
+                                <a href="product-card.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Скидки</span>
+                                    <span>Скидки</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="dostavka.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Новинки</span>
+                                    <span>Новинки</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="catalog.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Бренды</span>
+                                    <span>Бренды</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="dostavka.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Волосы</span>
+                                    <span>Волосы</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="politica.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Лицо</span>
+                                    <span>Лицо</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="vozvrat.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Тело</span>
+                                    <span>Тело</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="oferta.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Загар</span>
+                                    <span>Загар</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="profile.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Парфюм</span>
+                                    <span>Парфюм</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="favour-none.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Улыбка</span>
+                                    <span>Улыбка</span>
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="404.html" class="navigation-list__link link-reset link-effect">
+                                    <span>Ароматы</span>
+                                    <span>Ароматы</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cart-popup">
+                    <button class="cart-popup__btn btn-reset">
+                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="white" />
+                            <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="black" />
+                            <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="white" />
+                            <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="black" />
+                        </svg>
+                    </button>
+                    <span class="cart-popup__title">Вы добавили в корзину:</span>
+                    <ul class="cart-list">
+                        <li class="cart-list__item">
+                            <div class="cart-list__img">
+                                <img src="img/product-1.jpg" alt="img">
+                            </div>
+                            <div class="cart-list__info">
+                                <p class="cart-list__name">Очищающее средство MineTan Tan Eraser 200 мл</p>
+                                <span class="cart-list__price">52.99 byn</span>
+                            </div>
+                        </li>
+                        <li class="cart-list__item">
+                            <div class="cart-list__img">
+                                <img src="img/product-2.jpg" alt="img">
+                            </div>
+                            <div class="cart-list__info">
+                                <p class="cart-list__name">Очищающее средство MineTan Tan Eraser 200 мл</p>
+                                <span class="cart-list__price">52.99 byn</span>
+                            </div>
+                        </li>
+                        <li class="cart-list__item">
+                            <div class="cart-list__img">
+                                <img src="img/product-3.jpg" alt="img">
+                            </div>
+                            <div class="cart-list__info">
+                                <p class="cart-list__name">Очищающее средство MineTan Tan Eraser 200 мл</p>
+                                <span class="cart-list__price">52.99 byn</span>
+                            </div>
+                        </li>
+                    </ul>
+                <a href="cart.html" class="cart-popup__link link-reset custom-bg">Перейти в корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-window">
+        <div class="search-window__inner">
+            <div class="search-block">
+                <div class="search-block__form">
+                    <input type="text" class="search-block__input" placeholder="Поиск">
+                    <button class="search-block__btn btn-reset">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.114 16.3951L12.83 11.9395C13.9315 10.6301 14.535 8.98262 14.535 7.26749C14.535 3.26026 11.2747 0 7.26749 0C3.26026 0 0 3.26026 0 7.26749C0 11.2747 3.26026 14.535 7.26749 14.535C8.77187 14.535 10.2055 14.0812 11.4311 13.2199L15.7477 17.7093C15.9281 17.8967 16.1708 18 16.4309 18C16.677 18 16.9105 17.9062 17.0878 17.7355C17.4644 17.3731 17.4764 16.7721 17.114 16.3951ZM7.26749 1.89587C10.2295 1.89587 12.6391 4.30552 12.6391 7.26749C12.6391 10.2295 10.2295 12.6391 7.26749 12.6391C4.30552 12.6391 1.89587 10.2295 1.89587 7.26749C1.89587 4.30552 4.30552 1.89587 7.26749 1.89587Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="search-block__close btn-reset">
+                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="white" />
+                        <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="black" />
+                        <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="white" />
+                        <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="black" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="search-result list-reset">
+                <li class="search-result__item">
+                    <a href="#" class="tovar-link">
+                        <div class="tovar-link__img">
+                            <img src="img/product-1.jpg" alt="tovar">
+                        </div>
+                        <div class="tovar-link__info">
+                            <span class="tovar-link__name">Очищающее средство MineTan Tan Eraser 200 мл</span>
+                            <div class="price">
+                                <span class="price__new">52.99 byn</span>
+                                <span class="price__last">72.99 byn</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="search-result__item">
+                    <a href="#" class="tovar-link">
+                        <div class="tovar-link__img">
+                            <img src="img/product-1.jpg" alt="tovar">
+                        </div>
+                        <div class="tovar-link__info">
+                            <span class="tovar-link__name">Очищающее средство MineTan Tan Eraser 200 мл</span>
+                            <div class="price">
+                                <span class="price__new">52.99 byn</span>
+                                <span class="price__last">72.99 byn</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="menu">
+    <div class="menu-list">
+        <button class="menu-list__cross btn-reset" id="menu-close">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="white" />
+                <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="black" />
+                <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="white" />
+                <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="black" />
+            </svg>
+        </button>
+        <div class="menu-list__inner">
+            <div class="menu-list__top">
+                <div class="header-details">
+                    <button class="header-details__account register btn-reset">
+                        <div class="header-details__svg">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8151 7.01714C14.6926 6.28932 15.2525 5.1912 15.2525 3.96471C15.2525 1.77859 13.4739 0 11.2878 0C9.10168 0 7.32316 1.77859 7.32316 3.96471C7.32316 4.25047 7.35381 4.52916 7.41154 4.79793C7.18577 4.75785 6.95352 4.73686 6.71643 4.73686C4.53031 4.73686 2.75179 6.51545 2.75179 8.70158C2.75179 9.92795 3.31158 11.026 4.18894 11.7538C1.73458 12.7545 0 15.1664 0 17.9762H1.40657C1.40657 15.0483 3.78855 12.6663 6.7164 12.6663C8.90252 12.6663 10.681 10.8877 10.681 8.70161C10.681 8.41586 10.6504 8.13713 10.5927 7.86836C10.8184 7.90844 11.0507 7.92943 11.2878 7.92943C13.0132 7.92943 14.5484 8.75716 15.5188 10.0359L16.4719 8.97464C15.7675 8.11969 14.856 7.44166 13.8151 7.01714ZM6.71643 11.2597C5.30593 11.2597 4.15835 10.1121 4.15835 8.70158C4.15835 7.29101 5.30593 6.14346 6.71643 6.14346C8.12694 6.14346 9.27451 7.29105 9.27451 8.70158C9.27451 10.1121 8.12694 11.2597 6.71643 11.2597ZM11.2878 6.5228C9.8773 6.5228 8.72972 5.37524 8.72972 3.96468C8.72972 2.55411 9.8773 1.40659 11.2878 1.40659C12.6983 1.40659 13.8459 2.55415 13.8459 3.96471C13.8459 5.37531 12.6983 6.5228 11.2878 6.5228Z"
+                                    fill="black" />
+                                <path
+                                    d="M16.9535 10.5434L12.0681 15.9829L9.31116 13.3584L8.34141 14.3773L12.1472 18L18 11.4833L16.9535 10.5434Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <h4 class="counter-text">Вход | Регистрация</h4>
+                    </button>
+                    <a href="#" class="header-details__favourite succes link-reset">
+                        <div class="header-details__svg">
+                            <svg width="21" height="17" viewBox="0 0 21 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.761 1.66582C16.5424 -0.554972 12.9331 -0.554972 10.715 1.66582L10.1998 2.18134L9.68493 1.66582C7.46686 -0.555273 3.85726 -0.555273 1.6392 1.66582C-0.533827 3.84152 -0.547938 7.29024 1.60648 9.68808C3.57145 11.8743 9.36669 16.5975 9.61257 16.7974C9.7795 16.9333 9.98035 16.9994 10.18 16.9994C10.1866 16.9994 10.1932 16.9994 10.1995 16.9991C10.4061 17.0088 10.6141 16.9378 10.7865 16.7974C11.0323 16.5975 16.8282 11.8743 18.7937 9.68778C20.9479 7.29024 20.9338 3.84152 18.761 1.66582ZM17.4547 8.48149C15.9227 10.1856 11.7114 13.7001 10.1995 14.9473C8.68758 13.7004 4.47723 10.1862 2.94548 8.4818C1.44255 6.80929 1.42844 4.42738 2.91275 2.94124C3.67082 2.18254 4.66637 1.80289 5.66191 1.80289C6.65746 1.80289 7.653 2.18224 8.41107 2.94124L9.54352 4.07508C9.67832 4.21005 9.84825 4.29061 10.0266 4.31886C10.316 4.38109 10.63 4.30023 10.8552 4.07538L11.9882 2.94124C13.5047 1.42354 15.9713 1.42384 17.4869 2.94124C18.9712 4.42738 18.9571 6.80929 17.4547 8.48149Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <span class="counter counter--white">0</span>
+                        <h4 class="counter-text">Избранное: <span class="counter-text__number">0</span></h4>
+                    </a>
+                    <a href="#" class="header-details__cart register link-reset">
+                        <div class="header-details__svg">
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.5 5.83333L14.3728 5.88235L15 20H0L0.627141 5.88235H3.09267V3.13725C3.09267 1.40737 4.46806 1.21976e-07 6.15863 1.21976e-07L8.33333 3.72072e-05C8.7992 6.03023e-05 10 -4.37101e-06 10.8333 0.833333C11.6667 1.66667 11.5664 2.40518 11.5664 3.13725V5.86284L10.9492 5.88235H11.5664V5.86284L12.5 5.83333ZM1.72575 7.05883H3.09267V18.8235H1.20316L1.72575 7.05883ZM4.2424 18.8235V7.05883H5.77538H6.34814H6.92511H10.9492H12.0989H13.2742L13.7968 18.8235H4.2424ZM10 1.66667C10.1082 1.77487 9.85749 1.54719 10 1.66667C9.66803 1.3347 9.26465 1.2356 8.75 1.17647C8.89798 1.1769 8.61869 1.16139 8.75 1.17647C8.33333 1.17527 6.65931 1.17231 6.3164 1.17527C6.23441 1.17597 6.17671 1.17647 6.15863 1.17647C5.10202 1.17647 4.2424 2.05608 4.2424 3.13725V5.88235H6.92511H10.4167V3.13725C10.4167 2.73217 10.4063 2.00729 10 1.66667Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <span class="counter counter--black">1</span>
+                        <h4 class="counter-text">Корзина: <span class="counter-text__number">1</span></h4>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-list__center">
+                <ul class="mobile-filters list-reset">
+                    <li class="mobile-filters__item">
+                        <button class="mobile-filters__button btn-reset">
+                            Все товары
+                        </button>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <button class="mobile-filters__button btn-reset">
+                            Скидки
+                        </button>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Новинки</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                    <a href="#" class="accordion-list__link link-reset">
+                                        Все новинки
+                                    </a>
+                                </li>
+                                <li class="accordion-list__item">
+                                    <a href="#" class="accordion-list__link link-reset">
+                                        Новые бренды
+                                    </a>
+                                </li>
+                                <li class="accordion-list__item">
+                                    <a href="#" class="accordion-list__link link-reset">
+                                        Новое поступление
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Бренды</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                    <div class="tab-wrapper">
+                                        <div class="tabs-header">
+                                            <button class="tab-header tab-header_show btn-reset">A</button>
+                                            <button class="tab-header btn-reset">B</button>
+                                            <button class="tab-header btn-reset">C</button>
+                                            <button class="tab-header btn-reset">D</button>
+                                            <button class="tab-header btn-reset">E</button>
+                                            <button class="tab-header btn-reset">F</button>
+                                            <button class="tab-header btn-reset">G</button>
+                                            <button class="tab-header btn-reset">I</button>
+                                            <button class="tab-header btn-reset">J</button>
+                                            <button class="tab-header btn-reset">L</button>
+                                            <button class="tab-header btn-reset">M</button>
+                                            <button class="tab-header btn-reset">O</button>
+                                            <button class="tab-header btn-reset">P</button>
+                                            <button class="tab-header btn-reset">Q</button>
+                                            <button class="tab-header btn-reset">R</button>
+                                            <button class="tab-header btn-reset">S</button>
+                                            <button class="tab-header btn-reset">Z</button>
+                                        </div>
+                                        <!-- /.tabs-header -->
+                                        <div class="tabs-content">
+                                            <div class="tab-content fade tab-content_show">
+                                                <span class="tab-content__letter">A</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">B</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">C</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">D</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">E</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">F</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">G</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">I</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">J</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">L</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">M</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">O</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">P</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">Q</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">R</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">S</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content fade">
+                                                <span class="tab-content__letter">Z</span>
+                                                <div class="tab-content__links">
+                                                    <a href="#" class="tab-content__link link-reset">Acca Kappa</a>
+                                                    <a href="#" class="tab-content__link link-reset">Annbeauty</a>
+                                                </div>
+                                            </div>
+                                            <!-- /.tab-content -->
+                                        </div>
+                                        <!-- /.tabs-content -->
+                                    </div>
+                                    <!-- /.tab-wrapper -->
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Волосы</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Лицо</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Тело</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Парфюм</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Загар</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Ароматы</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-filters__item">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <div class="accordion__cross"></div>
+                                <h4>Улыбка</h4>
+                            </div>
+                            <ul class="accordion-list filter-list--checkboxes list-reset">
+                                <li class="accordion-list__item">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-list__bottom">
+                <ul class="navigation-list list-reset">
+                    <li class="navigation-list__item">
+                        <a href="catalog.html" class="navigation-list__link link-reset link-effect">
+                            <span>Блог</span>
+                            <span>Блог</span>
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="oplata.html" class="navigation-list__link link-reset link-effect">
+                            <span>Оплата</span>
+                            <span>Оплата</span>
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="dostavka.html" class="navigation-list__link link-reset link-effect">
+                            <span>Доставка</span>
+                            <span>Доставка</span>
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="zakaz.html" class="navigation-list__link link-reset link-effect">
+                            <span>Контакты</span>
+                            <span>Контакты</span>
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <div class="navigation-list__item--icon"><img src="img/question-mobile.png" alt="question">
+                        </div>
+                        <a href="oferta.html" class="navigation-list__link link-reset link-effect">
+                            <span>Задать вопрос</span>
+                            <span>Задать вопрос</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="infinity-line">
+    <h3 class="infinity-line__title">
+        <div class="infinity-line__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.376 3.70241C15.57 4.06339 14.9443 4.50191 14.2869 5.16647C13.0798 6.38677 12.5152 7.70954 12.4168 9.54778C12.379 10.2555 12.3381 10.4183 12.1387 10.655C11.8934 10.9463 11.3744 11.0602 11.0021 10.9044C10.9048 10.8637 10.5622 10.5585 10.1215 10.12C9.72462 9.72512 9.39287 9.41059 9.38421 9.42103C9.27717 9.54968 7.73444 11.7223 7.56159 11.9877C6.32894 13.8812 5.8889 16.2977 6.36142 18.579C6.98883 21.6085 9.21024 24.1208 12.1399 25.1144C16.3438 26.5402 20.9037 24.6581 22.9032 20.6717C23.6836 19.1158 24.0065 17.1208 23.7194 15.6288C23.537 14.681 23.0357 13.5132 22.411 12.5808C22.0646 12.0637 21.9179 11.8809 20.9256 10.7301C19.0187 8.51866 17.499 5.96602 16.9579 4.06594C16.8756 3.77672 16.803 3.53538 16.7967 3.5296C16.7904 3.52382 16.6011 3.60158 16.376 3.70241ZM16.5274 6.46699C16.956 7.35883 17.282 7.93294 17.8607 8.81461C18.6012 9.943 19.0958 10.5785 20.6737 12.429C21.5337 13.4376 22.122 14.5293 22.3968 15.6262C22.4972 16.0272 22.5108 16.1667 22.5107 16.7932C22.5105 17.5509 22.4647 17.9353 22.292 18.6258C21.6422 21.2239 19.5126 23.3764 16.936 24.0394C13.6219 24.8923 10.2523 23.511 8.49835 20.5807C7.55935 19.0119 7.23427 16.9565 7.63684 15.1328C7.86853 14.0831 8.28247 13.1963 9.05086 12.1036L9.54104 11.4065L9.83959 11.6644C10.3423 12.0987 10.768 12.2648 11.3782 12.2648C12.0176 12.2648 12.474 12.0929 12.9241 11.6826C13.4726 11.1825 13.6494 10.7287 13.7055 9.67716C13.7724 8.42577 13.9865 7.71744 14.5596 6.85229C14.7954 6.49636 15.286 5.96904 15.7084 5.61754L16.0099 5.36663L16.0918 5.5488C16.1369 5.64898 16.3329 6.06219 16.5274 6.46699ZM12.2525 14.5028C11.8493 14.653 11.5792 14.9052 11.3927 15.3053C11.2837 15.5393 11.2721 15.6096 11.272 16.0385C11.2717 16.5934 11.3389 16.8337 11.5842 17.1564C12.1069 17.8439 13.3273 17.905 13.9564 17.2752C14.4453 16.7856 14.5424 15.7862 14.1638 15.1394C14.0221 14.8973 13.7498 14.6534 13.4974 14.5423C13.1986 14.4109 12.5539 14.3904 12.2525 14.5028ZM14.3096 17.4258C13.2147 19.0309 12.3089 20.37 12.2968 20.4016C12.279 20.4481 12.4078 20.4591 12.9664 20.4591H13.658L13.7633 20.3189C13.9134 20.1191 17.7113 14.545 17.7113 14.5245C17.7113 14.5151 17.3938 14.5075 17.0058 14.5075H16.3003L14.3096 17.4258ZM13.0134 15.4104C13.2443 15.6415 13.2503 16.4571 13.0231 16.7199C12.922 16.8368 12.681 16.8017 12.5713 16.6541C12.3778 16.3934 12.4425 15.5011 12.6644 15.3715C12.7795 15.3043 12.9235 15.3203 13.0134 15.4104ZM16.6029 17.3064C16.0051 17.5283 15.6543 18.0242 15.6117 18.7075C15.5503 19.6921 16.044 20.3767 16.9021 20.497C17.7035 20.6093 18.3827 20.2361 18.6398 19.5422C18.7041 19.3685 18.7234 19.2065 18.7229 18.8418C18.7224 18.4116 18.7108 18.3424 18.5989 18.0985C18.4544 17.7838 18.1534 17.4807 17.8517 17.3459C17.5529 17.2124 16.9108 17.1922 16.6029 17.3064ZM17.3227 18.1729C17.4704 18.252 17.5519 18.565 17.5306 18.9712C17.5073 19.4152 17.4226 19.5675 17.1879 19.5879C16.9405 19.6093 16.8066 19.3636 16.807 18.8893C16.8075 18.3068 17.0205 18.0109 17.3227 18.1729Z"
+                    fill="white" />
+            </svg>
+        </div>
+
+        Скидка 25% на первый заказ по коду:<span>НОВЫЙ25</span>
+    </h3>
+    <h3 class="infinity-line__title">
+        <div class="infinity-line__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.376 3.70241C15.57 4.06339 14.9443 4.50191 14.2869 5.16647C13.0798 6.38677 12.5152 7.70954 12.4168 9.54778C12.379 10.2555 12.3381 10.4183 12.1387 10.655C11.8934 10.9463 11.3744 11.0602 11.0021 10.9044C10.9048 10.8637 10.5622 10.5585 10.1215 10.12C9.72462 9.72512 9.39287 9.41059 9.38421 9.42103C9.27717 9.54968 7.73444 11.7223 7.56159 11.9877C6.32894 13.8812 5.8889 16.2977 6.36142 18.579C6.98883 21.6085 9.21024 24.1208 12.1399 25.1144C16.3438 26.5402 20.9037 24.6581 22.9032 20.6717C23.6836 19.1158 24.0065 17.1208 23.7194 15.6288C23.537 14.681 23.0357 13.5132 22.411 12.5808C22.0646 12.0637 21.9179 11.8809 20.9256 10.7301C19.0187 8.51866 17.499 5.96602 16.9579 4.06594C16.8756 3.77672 16.803 3.53538 16.7967 3.5296C16.7904 3.52382 16.6011 3.60158 16.376 3.70241ZM16.5274 6.46699C16.956 7.35883 17.282 7.93294 17.8607 8.81461C18.6012 9.943 19.0958 10.5785 20.6737 12.429C21.5337 13.4376 22.122 14.5293 22.3968 15.6262C22.4972 16.0272 22.5108 16.1667 22.5107 16.7932C22.5105 17.5509 22.4647 17.9353 22.292 18.6258C21.6422 21.2239 19.5126 23.3764 16.936 24.0394C13.6219 24.8923 10.2523 23.511 8.49835 20.5807C7.55935 19.0119 7.23427 16.9565 7.63684 15.1328C7.86853 14.0831 8.28247 13.1963 9.05086 12.1036L9.54104 11.4065L9.83959 11.6644C10.3423 12.0987 10.768 12.2648 11.3782 12.2648C12.0176 12.2648 12.474 12.0929 12.9241 11.6826C13.4726 11.1825 13.6494 10.7287 13.7055 9.67716C13.7724 8.42577 13.9865 7.71744 14.5596 6.85229C14.7954 6.49636 15.286 5.96904 15.7084 5.61754L16.0099 5.36663L16.0918 5.5488C16.1369 5.64898 16.3329 6.06219 16.5274 6.46699ZM12.2525 14.5028C11.8493 14.653 11.5792 14.9052 11.3927 15.3053C11.2837 15.5393 11.2721 15.6096 11.272 16.0385C11.2717 16.5934 11.3389 16.8337 11.5842 17.1564C12.1069 17.8439 13.3273 17.905 13.9564 17.2752C14.4453 16.7856 14.5424 15.7862 14.1638 15.1394C14.0221 14.8973 13.7498 14.6534 13.4974 14.5423C13.1986 14.4109 12.5539 14.3904 12.2525 14.5028ZM14.3096 17.4258C13.2147 19.0309 12.3089 20.37 12.2968 20.4016C12.279 20.4481 12.4078 20.4591 12.9664 20.4591H13.658L13.7633 20.3189C13.9134 20.1191 17.7113 14.545 17.7113 14.5245C17.7113 14.5151 17.3938 14.5075 17.0058 14.5075H16.3003L14.3096 17.4258ZM13.0134 15.4104C13.2443 15.6415 13.2503 16.4571 13.0231 16.7199C12.922 16.8368 12.681 16.8017 12.5713 16.6541C12.3778 16.3934 12.4425 15.5011 12.6644 15.3715C12.7795 15.3043 12.9235 15.3203 13.0134 15.4104ZM16.6029 17.3064C16.0051 17.5283 15.6543 18.0242 15.6117 18.7075C15.5503 19.6921 16.044 20.3767 16.9021 20.497C17.7035 20.6093 18.3827 20.2361 18.6398 19.5422C18.7041 19.3685 18.7234 19.2065 18.7229 18.8418C18.7224 18.4116 18.7108 18.3424 18.5989 18.0985C18.4544 17.7838 18.1534 17.4807 17.8517 17.3459C17.5529 17.2124 16.9108 17.1922 16.6029 17.3064ZM17.3227 18.1729C17.4704 18.252 17.5519 18.565 17.5306 18.9712C17.5073 19.4152 17.4226 19.5675 17.1879 19.5879C16.9405 19.6093 16.8066 19.3636 16.807 18.8893C16.8075 18.3068 17.0205 18.0109 17.3227 18.1729Z"
+                    fill="white" />
+            </svg>
+        </div>
+
+        Скидка 25% на первый заказ по коду:<span>НОВЫЙ25</span>
+    </h3>
+    <h3 class="infinity-line__title">
+        <div class="infinity-line__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.376 3.70241C15.57 4.06339 14.9443 4.50191 14.2869 5.16647C13.0798 6.38677 12.5152 7.70954 12.4168 9.54778C12.379 10.2555 12.3381 10.4183 12.1387 10.655C11.8934 10.9463 11.3744 11.0602 11.0021 10.9044C10.9048 10.8637 10.5622 10.5585 10.1215 10.12C9.72462 9.72512 9.39287 9.41059 9.38421 9.42103C9.27717 9.54968 7.73444 11.7223 7.56159 11.9877C6.32894 13.8812 5.8889 16.2977 6.36142 18.579C6.98883 21.6085 9.21024 24.1208 12.1399 25.1144C16.3438 26.5402 20.9037 24.6581 22.9032 20.6717C23.6836 19.1158 24.0065 17.1208 23.7194 15.6288C23.537 14.681 23.0357 13.5132 22.411 12.5808C22.0646 12.0637 21.9179 11.8809 20.9256 10.7301C19.0187 8.51866 17.499 5.96602 16.9579 4.06594C16.8756 3.77672 16.803 3.53538 16.7967 3.5296C16.7904 3.52382 16.6011 3.60158 16.376 3.70241ZM16.5274 6.46699C16.956 7.35883 17.282 7.93294 17.8607 8.81461C18.6012 9.943 19.0958 10.5785 20.6737 12.429C21.5337 13.4376 22.122 14.5293 22.3968 15.6262C22.4972 16.0272 22.5108 16.1667 22.5107 16.7932C22.5105 17.5509 22.4647 17.9353 22.292 18.6258C21.6422 21.2239 19.5126 23.3764 16.936 24.0394C13.6219 24.8923 10.2523 23.511 8.49835 20.5807C7.55935 19.0119 7.23427 16.9565 7.63684 15.1328C7.86853 14.0831 8.28247 13.1963 9.05086 12.1036L9.54104 11.4065L9.83959 11.6644C10.3423 12.0987 10.768 12.2648 11.3782 12.2648C12.0176 12.2648 12.474 12.0929 12.9241 11.6826C13.4726 11.1825 13.6494 10.7287 13.7055 9.67716C13.7724 8.42577 13.9865 7.71744 14.5596 6.85229C14.7954 6.49636 15.286 5.96904 15.7084 5.61754L16.0099 5.36663L16.0918 5.5488C16.1369 5.64898 16.3329 6.06219 16.5274 6.46699ZM12.2525 14.5028C11.8493 14.653 11.5792 14.9052 11.3927 15.3053C11.2837 15.5393 11.2721 15.6096 11.272 16.0385C11.2717 16.5934 11.3389 16.8337 11.5842 17.1564C12.1069 17.8439 13.3273 17.905 13.9564 17.2752C14.4453 16.7856 14.5424 15.7862 14.1638 15.1394C14.0221 14.8973 13.7498 14.6534 13.4974 14.5423C13.1986 14.4109 12.5539 14.3904 12.2525 14.5028ZM14.3096 17.4258C13.2147 19.0309 12.3089 20.37 12.2968 20.4016C12.279 20.4481 12.4078 20.4591 12.9664 20.4591H13.658L13.7633 20.3189C13.9134 20.1191 17.7113 14.545 17.7113 14.5245C17.7113 14.5151 17.3938 14.5075 17.0058 14.5075H16.3003L14.3096 17.4258ZM13.0134 15.4104C13.2443 15.6415 13.2503 16.4571 13.0231 16.7199C12.922 16.8368 12.681 16.8017 12.5713 16.6541C12.3778 16.3934 12.4425 15.5011 12.6644 15.3715C12.7795 15.3043 12.9235 15.3203 13.0134 15.4104ZM16.6029 17.3064C16.0051 17.5283 15.6543 18.0242 15.6117 18.7075C15.5503 19.6921 16.044 20.3767 16.9021 20.497C17.7035 20.6093 18.3827 20.2361 18.6398 19.5422C18.7041 19.3685 18.7234 19.2065 18.7229 18.8418C18.7224 18.4116 18.7108 18.3424 18.5989 18.0985C18.4544 17.7838 18.1534 17.4807 17.8517 17.3459C17.5529 17.2124 16.9108 17.1922 16.6029 17.3064ZM17.3227 18.1729C17.4704 18.252 17.5519 18.565 17.5306 18.9712C17.5073 19.4152 17.4226 19.5675 17.1879 19.5879C16.9405 19.6093 16.8066 19.3636 16.807 18.8893C16.8075 18.3068 17.0205 18.0109 17.3227 18.1729Z"
+                    fill="white" />
+            </svg>
+        </div>
+
+        Скидка 25% на первый заказ по коду:<span>НОВЫЙ25</span>
+    </h3>
+    <h3 class="infinity-line__title">
+        <div class="infinity-line__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.376 3.70241C15.57 4.06339 14.9443 4.50191 14.2869 5.16647C13.0798 6.38677 12.5152 7.70954 12.4168 9.54778C12.379 10.2555 12.3381 10.4183 12.1387 10.655C11.8934 10.9463 11.3744 11.0602 11.0021 10.9044C10.9048 10.8637 10.5622 10.5585 10.1215 10.12C9.72462 9.72512 9.39287 9.41059 9.38421 9.42103C9.27717 9.54968 7.73444 11.7223 7.56159 11.9877C6.32894 13.8812 5.8889 16.2977 6.36142 18.579C6.98883 21.6085 9.21024 24.1208 12.1399 25.1144C16.3438 26.5402 20.9037 24.6581 22.9032 20.6717C23.6836 19.1158 24.0065 17.1208 23.7194 15.6288C23.537 14.681 23.0357 13.5132 22.411 12.5808C22.0646 12.0637 21.9179 11.8809 20.9256 10.7301C19.0187 8.51866 17.499 5.96602 16.9579 4.06594C16.8756 3.77672 16.803 3.53538 16.7967 3.5296C16.7904 3.52382 16.6011 3.60158 16.376 3.70241ZM16.5274 6.46699C16.956 7.35883 17.282 7.93294 17.8607 8.81461C18.6012 9.943 19.0958 10.5785 20.6737 12.429C21.5337 13.4376 22.122 14.5293 22.3968 15.6262C22.4972 16.0272 22.5108 16.1667 22.5107 16.7932C22.5105 17.5509 22.4647 17.9353 22.292 18.6258C21.6422 21.2239 19.5126 23.3764 16.936 24.0394C13.6219 24.8923 10.2523 23.511 8.49835 20.5807C7.55935 19.0119 7.23427 16.9565 7.63684 15.1328C7.86853 14.0831 8.28247 13.1963 9.05086 12.1036L9.54104 11.4065L9.83959 11.6644C10.3423 12.0987 10.768 12.2648 11.3782 12.2648C12.0176 12.2648 12.474 12.0929 12.9241 11.6826C13.4726 11.1825 13.6494 10.7287 13.7055 9.67716C13.7724 8.42577 13.9865 7.71744 14.5596 6.85229C14.7954 6.49636 15.286 5.96904 15.7084 5.61754L16.0099 5.36663L16.0918 5.5488C16.1369 5.64898 16.3329 6.06219 16.5274 6.46699ZM12.2525 14.5028C11.8493 14.653 11.5792 14.9052 11.3927 15.3053C11.2837 15.5393 11.2721 15.6096 11.272 16.0385C11.2717 16.5934 11.3389 16.8337 11.5842 17.1564C12.1069 17.8439 13.3273 17.905 13.9564 17.2752C14.4453 16.7856 14.5424 15.7862 14.1638 15.1394C14.0221 14.8973 13.7498 14.6534 13.4974 14.5423C13.1986 14.4109 12.5539 14.3904 12.2525 14.5028ZM14.3096 17.4258C13.2147 19.0309 12.3089 20.37 12.2968 20.4016C12.279 20.4481 12.4078 20.4591 12.9664 20.4591H13.658L13.7633 20.3189C13.9134 20.1191 17.7113 14.545 17.7113 14.5245C17.7113 14.5151 17.3938 14.5075 17.0058 14.5075H16.3003L14.3096 17.4258ZM13.0134 15.4104C13.2443 15.6415 13.2503 16.4571 13.0231 16.7199C12.922 16.8368 12.681 16.8017 12.5713 16.6541C12.3778 16.3934 12.4425 15.5011 12.6644 15.3715C12.7795 15.3043 12.9235 15.3203 13.0134 15.4104ZM16.6029 17.3064C16.0051 17.5283 15.6543 18.0242 15.6117 18.7075C15.5503 19.6921 16.044 20.3767 16.9021 20.497C17.7035 20.6093 18.3827 20.2361 18.6398 19.5422C18.7041 19.3685 18.7234 19.2065 18.7229 18.8418C18.7224 18.4116 18.7108 18.3424 18.5989 18.0985C18.4544 17.7838 18.1534 17.4807 17.8517 17.3459C17.5529 17.2124 16.9108 17.1922 16.6029 17.3064ZM17.3227 18.1729C17.4704 18.252 17.5519 18.565 17.5306 18.9712C17.5073 19.4152 17.4226 19.5675 17.1879 19.5879C16.9405 19.6093 16.8066 19.3636 16.807 18.8893C16.8075 18.3068 17.0205 18.0109 17.3227 18.1729Z"
+                    fill="white" />
+            </svg>
+        </div>
+
+        Скидка 25% на первый заказ по коду:<span>НОВЫЙ25</span>
+    </h3>
+    <h3 class="infinity-line__title">
+        <div class="infinity-line__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.376 3.70241C15.57 4.06339 14.9443 4.50191 14.2869 5.16647C13.0798 6.38677 12.5152 7.70954 12.4168 9.54778C12.379 10.2555 12.3381 10.4183 12.1387 10.655C11.8934 10.9463 11.3744 11.0602 11.0021 10.9044C10.9048 10.8637 10.5622 10.5585 10.1215 10.12C9.72462 9.72512 9.39287 9.41059 9.38421 9.42103C9.27717 9.54968 7.73444 11.7223 7.56159 11.9877C6.32894 13.8812 5.8889 16.2977 6.36142 18.579C6.98883 21.6085 9.21024 24.1208 12.1399 25.1144C16.3438 26.5402 20.9037 24.6581 22.9032 20.6717C23.6836 19.1158 24.0065 17.1208 23.7194 15.6288C23.537 14.681 23.0357 13.5132 22.411 12.5808C22.0646 12.0637 21.9179 11.8809 20.9256 10.7301C19.0187 8.51866 17.499 5.96602 16.9579 4.06594C16.8756 3.77672 16.803 3.53538 16.7967 3.5296C16.7904 3.52382 16.6011 3.60158 16.376 3.70241ZM16.5274 6.46699C16.956 7.35883 17.282 7.93294 17.8607 8.81461C18.6012 9.943 19.0958 10.5785 20.6737 12.429C21.5337 13.4376 22.122 14.5293 22.3968 15.6262C22.4972 16.0272 22.5108 16.1667 22.5107 16.7932C22.5105 17.5509 22.4647 17.9353 22.292 18.6258C21.6422 21.2239 19.5126 23.3764 16.936 24.0394C13.6219 24.8923 10.2523 23.511 8.49835 20.5807C7.55935 19.0119 7.23427 16.9565 7.63684 15.1328C7.86853 14.0831 8.28247 13.1963 9.05086 12.1036L9.54104 11.4065L9.83959 11.6644C10.3423 12.0987 10.768 12.2648 11.3782 12.2648C12.0176 12.2648 12.474 12.0929 12.9241 11.6826C13.4726 11.1825 13.6494 10.7287 13.7055 9.67716C13.7724 8.42577 13.9865 7.71744 14.5596 6.85229C14.7954 6.49636 15.286 5.96904 15.7084 5.61754L16.0099 5.36663L16.0918 5.5488C16.1369 5.64898 16.3329 6.06219 16.5274 6.46699ZM12.2525 14.5028C11.8493 14.653 11.5792 14.9052 11.3927 15.3053C11.2837 15.5393 11.2721 15.6096 11.272 16.0385C11.2717 16.5934 11.3389 16.8337 11.5842 17.1564C12.1069 17.8439 13.3273 17.905 13.9564 17.2752C14.4453 16.7856 14.5424 15.7862 14.1638 15.1394C14.0221 14.8973 13.7498 14.6534 13.4974 14.5423C13.1986 14.4109 12.5539 14.3904 12.2525 14.5028ZM14.3096 17.4258C13.2147 19.0309 12.3089 20.37 12.2968 20.4016C12.279 20.4481 12.4078 20.4591 12.9664 20.4591H13.658L13.7633 20.3189C13.9134 20.1191 17.7113 14.545 17.7113 14.5245C17.7113 14.5151 17.3938 14.5075 17.0058 14.5075H16.3003L14.3096 17.4258ZM13.0134 15.4104C13.2443 15.6415 13.2503 16.4571 13.0231 16.7199C12.922 16.8368 12.681 16.8017 12.5713 16.6541C12.3778 16.3934 12.4425 15.5011 12.6644 15.3715C12.7795 15.3043 12.9235 15.3203 13.0134 15.4104ZM16.6029 17.3064C16.0051 17.5283 15.6543 18.0242 15.6117 18.7075C15.5503 19.6921 16.044 20.3767 16.9021 20.497C17.7035 20.6093 18.3827 20.2361 18.6398 19.5422C18.7041 19.3685 18.7234 19.2065 18.7229 18.8418C18.7224 18.4116 18.7108 18.3424 18.5989 18.0985C18.4544 17.7838 18.1534 17.4807 17.8517 17.3459C17.5529 17.2124 16.9108 17.1922 16.6029 17.3064ZM17.3227 18.1729C17.4704 18.252 17.5519 18.565 17.5306 18.9712C17.5073 19.4152 17.4226 19.5675 17.1879 19.5879C16.9405 19.6093 16.8066 19.3636 16.807 18.8893C16.8075 18.3068 17.0205 18.0109 17.3227 18.1729Z"
+                    fill="white" />
+            </svg>
+        </div>
+
+        Скидка 25% на первый заказ по коду:<span>НОВЫЙ25</span>
+    </h3>
+</div>
+
+
+
+
+<div class="popup" id="popup-login">
+    <div class="popup-inner">
+        <div class="popup-inner__content">
+            <div class="popup-inner__top">
+                <h3 class="popup-inner__title">Вход в аккаунт</h3>
+            </div>
+            <form action="" class="popup-form">
+                <input type="text" class="popup-form__input" placeholder="E-mail">
+                <input type="text" class="popup-form__input" placeholder="Отчество">
+                <a href="#" class="popup-form__password-reset link-effect link-reset">
+                    <span>Забыли пароль?</span>
+                    <span>Забыли пароль?</span>
+                </a>
+                <button class="popup-form__login black-fill btn-reset">Войти</button>
+                <button class="popup-form__create-acc black-stroke black-stroke--hover btn-reset">Создать
+                    аккаунт</button>
+            </form>
+        </div>
+        <button class="menu-list__cross btn-reset">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="white" />
+                <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="black" />
+                <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="white" />
+                <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="black" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+<div class="popup" id="popup-register">
+    <div class="popup-inner">
+        <div class="popup-inner__content">
+            <div class="popup-inner__top">
+                <h3 class="popup-inner__title">Регистрация аккаунта</h3>
+            </div>
+            <form action="" class="popup-form">
+                <input type="text" class="popup-form__input" placeholder="Имя">
+                <input type="text" class="popup-form__input" placeholder="E-mail">
+                <input type="password" class="popup-form__input" placeholder="Пароль">
+                <input type="password" class="popup-form__input" placeholder="Подтверждение пароля">
+                <a href="#" class="popup-form__password-reset btn-bg link-reset">Забыли пароль?</a>
+                <div class="popup-form__labels">
+                    <label for="conditions" class="popup-form__label">
+                        <input type="checkbox" name="conditions" id="conditions" class="popup-form__checkbox">
+                        <div class="popup-form__cube"></div>
+                        <span>Я принимаю условия обработки персональных данных</span>
+                    </label>
+                    <label for="info" class="popup-form__label">
+                        <input type="checkbox" name="info" id="info" class="popup-form__checkbox">
+                        <div class="popup-form__cube"></div>
+                        <span>Хочу получать полезную информацию от TAN GALLERY</span>
+                    </label>
+                </div>
+                <button class="popup-form__login black-fill btn-reset">Создать аккаунт</button>
+                <button class="popup-form__create-acc black-stroke black-stroke--hover btn-reset">Войти</button>
+            </form>
+        </div>
+        <button class="menu-list__cross btn-reset">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="white" />
+                <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="black" />
+                <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="white" />
+                <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="black" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="popup" id="popup-succesful">
+    <div class="popup-inner">
+        <div class="popup-inner__content">
+            <div class="popup-inner__top">
+                <h3 class="popup-inner__title">Регистрация аккаунта</h3>
+            </div>
+            <div class="popup-inner__center">
+                <div class="popup-inner__check-mark">
+                    <img src="img/check-mark.png" alt="check-mark">
+                </div>
+                <span> Вы успешно зарегистрировались.<br>
+                    Зайдите под своим логином и паролем.</span>
+
+            </div>
+            <form action="" class="popup-form">
+                <button class="popup-form__purchases black-fill btn-reset">Начать покупки</button>
+                <button class="popup-form__personal-acc black-stroke black-stroke--hover btn-reset">Войти</button>
+            </form>
+        </div>
+        <button class="menu-list__cross btn-reset">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="white" />
+                <path d="M0.737397 0L9 8.2626L8.2626 9L6.84156e-09 0.737397L0.737397 0Z" fill="black" />
+                <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="white" />
+                <path d="M9 0.737397L0.737397 9L0 8.2626L8.2626 2.5913e-08L9 0.737397Z" fill="black" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list list-reset">
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html" class="breadcrumbs-list__link link-reset link-effect">
+                        <span>Главная страница</span>
+                        <span>Главная страница</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <a class="breadcrumbs-list__link link-reset">
+                        <span>Оформление заказа</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="oplata">
+        <div class="container">
+            <h1 class="sec-title">Оформление заказа</h1>
+            <div class="oplata__inner">
+                <div class="accordion-block">
+                    <div class="accordion">
+                        <div class="accordion__title">
+                            <h4>Оформление заказа</h4>
+                            <div class="accordion__cross"></div>
+                        </div>
+                        <ul class="accordion-list filter-list--checkboxes list-reset">
+                            <li class="accordion-list__item">
+                                <p class="accordion-list__text">Оформить заказ на нашем сайте очень просто, достаточно пройти несколько шагов: выберите интересующий Вас товар, укажите его количество и добавьте в корзину. Для подтверждения заказа укажите контактные данные, выберете удобный способ доставки и оплатите товар.</p>
+                            </li>
+                            <li class="accordion-list__item">
+                                <p class="accordion-list__text">Заказы в электронной форме принимаются круглосуточно. Для оформления заказа Вы также можете связаться с нами по электронной почте info@tangallery.by либо по мобильному телефону <a href="tel:+375293309393" class="link-reset custom-bg">+375 (29) 330 93 93</a>.</p>
+                            </li>
+                            <li class="accordion-list__item">
+                                <p class="accordion-list__text">Размещая заказ, Вы подтверждаете, что соглашаетесь со всеми перечисленными условиями и положениями договора публичной оферты. После размещения и оплаты заказа Вам на электронный ящик будет направлено подтверждение, в котором будет содержаться полное резюме Вашего заказа.
+                                </p>
+                            </li>
+                            <li class="accordion-list__item">
+                                <p class="accordion-list__text">Компания TanGallery исполняет сделанные в интернет-магазине заказы только в пределах имеющихся в наличии товаров. В случае отсутствия по какой-либо причине заказанного Вами товара, мы сообщим Вам об этом в ближайшее время.
+                                </p>
+                            </li>
+            
+                            <li class="accordion-list__item">
+                                <p class="accordion-list__text"><b>Образец чека покупки:</b></p>
+                            </li>
+                            <li class="accordion-list__item">
+                              <img src="img/zakaz-document.jpg" alt="document">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__title">
+                            <h4>Отмена заказа</h4>
+                            <div class="accordion__cross"></div>
+                        </div>
+                        <ul class="accordion-list filter-list--checkboxes list-reset">
+                            <li class="accordion-list__item">
+                                <p class="accordion-list__text">Для отмены заказа свяжитесь с нами по электронной почте <a href="mailto:info@tangallery.by" class="link-reset custom-bg">info@tangallery.by</a> либо мобильному телефону <a href="tel:+375293309393" class="link-reset custom-bg">+375 (29) 330 93 93</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <h4 class="additional-info__title">Мы всегда рады ответить на все интересующие Вас вопросы по следующим контактам:</h4>
+                    <span class="additional-info__contact">тел.: <a href="#" class="additional-info__link link-reset custom-bg">+375 (29) 330 93 93</a> (Viber, WhatsApp, Telegram)</span>
+                    <span class="additional-info__contact">instagram: <a href="tel:+375293309393" class="additional-info__link link-reset custom-bg">@tangallery_zagar</a></span>
+                    <span class="additional-info__contact">e-mail: <a href="mailto:info@tangallery.by" class="additional-info__link link-reset custom-bg">info@tangallery.by</a></span>
+                    <span class="additional-info__contact">web: <a href="#" class="additional-info__link link-reset custom-bg">www.tangallery.by</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sub-news sub-news--custom">
+        <div class="container">
+            <div class="sub-news__inner">
+                <div class="sub-left">
+                    <h2 class="sub-left__title">Подпишитесь на наши новости</h2>
+                    <span class="sub-left__subtitle">Получайте самые свежие новости и VIP-предложения от TAN
+                        GALLERY</span>
+                </div>
+                <div class="sub-right">
+                    <input type="text" class="sub-right__input" placeholder="Ваш E-mail ">
+                    <button type="submit" class="sub-right__apply black-fill black-fill--hover btn-reset">Подписаться
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top__inner">
+                <ul class="footer-list list-reset">
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Политика конфиденциальности</span>
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Договор оферты</span>
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Обмен/возврат</span>
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>FAQ</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-list list-reset">
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Каталог</span>
+                            <span>Каталог</span>
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Оплата</span>
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Доставка</span>
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Оформление заказа</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-list list-reset">
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>О нас</span>
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Контакты</span>
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link link-reset">
+                            <span>Партнерам</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-list list-reset">
+                    <li class="footer-list__item">
+                        <span class="footer-list__time">
+                            Работаем ежедневно<br>
+                            с 8:00 до 20:00<br>
+                            Прием заказов круглосуточно
+                        </span>
+                    </li>
+                    <li class="footer-list__item">
+                        <div class="company-info footer-list__info company-info--footer">
+                            <a href="tel:+375293309393" class="company-info__phone link-reset custom-bg">+375 (29) 330-93-93</a>
+                            <a href="mailto:info@tangallery.by"
+                                class="company-info__mail link-reset custom-bg">info@tangallery.by</a>
+                        </div>
+                    </li>
+                </ul>
+          
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__banks">
+                <img src="img/mobile-banks_1.png" alt="banks">
+                <img src="img/mobile-banks_2.png" alt="banks">
+            </div>
+            <div class="footer-bottom__descr">
+                Индивидуальный предприниматель Левченя Елена Дмитриевна УНП 193230881 Свидетельство о государственной
+                регистрации №193230881 выдано Минским горисполкомом 28 марта 2019 г. 220020, Республика Беларусь, г.
+                Минск,
+                ул. Мястровская д. 28-55 В торговом реестре Республики Беларусь с 16 января 2020 г.
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/global.js"></script>
+</body>
+
+</html>
